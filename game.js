@@ -12,41 +12,90 @@ let availableQuestions = [];
 
 let questions = [
   {
-    question: "What is 1 + 2?",
-    choice1: "2",
-    choice2: "4",
-    choice3: "21",
-    choice4: "17",
-    answer: 2,
+    question: "The United States bought Alaska from which country?",
+    choice1: "Russia",
+    choice2: "Canada",
+    choice3: "Mexico",
+    choice4: "Finland",
+    answer: 1,
   },
   {
-    question: "What is 2 + 2?",
-    choice1: "2",
-    choice2: "4",
-    choice3: "21",
-    choice4: "17",
-    answer: 2,
+    question: "In 16th-century Japan, who was Yasuke?",
+    choice1: "Actor",
+    choice2: "Soldier",
+    choice3: "Chef",
+    choice4: "Foreign-born Samurai",
+    answer: 4,
   },
   {
-    question: "What is 3 + 2?",
-    choice1: "2",
-    choice2: "4",
-    choice3: "21",
-    choice4: "17",
-    answer: 2,
+    question: "What is considered the world’s oldest writing system?",
+    choice1: "Chinese",
+    choice2: "Cyrillic script",
+    choice3: "Cuneiform",
+    choice4: "Egyptian",
+    answer: 3,
   },
   {
-    question: "What is 4 + 2?",
-    choice1: "2",
-    choice2: "4",
-    choice3: "21",
-    choice4: "17",
+    question: "Where was Napoleon Bonaparte born?",
+    choice1: "Germany",
+    choice2: "Spain",
+    choice3: "United States",
+    choice4: "France",
+    answer: 4,
+  },
+  {
+    question: "What is the name of the first human civilization?",
+    choice1: "Mesopotamia",
+    choice2: "Magenta",
+    choice3: "Homo-sapiens",
+    choice4: "Humans",
+    answer: 1,
+  },
+  {
+    question: "Neil Armstrong, Buzz Aldrin and…? Who was the third astronaut involved in the Apollo 11 mission that landed on the moon?",
+    choice1: "Jhon Stickman",
+    choice2: "Andrew Garfield",
+    choice3: "Michael Collins",
+    choice4: "Joe Biden",
+    answer: 3,
+  },
+  {
+    question: "In which year was John F. Kennedy assassinated?",
+    choice1: "1963",
+    choice2: "1972",
+    choice3: "1974",
+    choice4: "1971",
+    answer: 1,
+  },
+  {
+    question: "When did the first Space Shuttle go into space?",
+    choice1: "February 18/ 1981",
+    choice2: "July 9/1979",
+    choice3: "April 17/1982",
+    choice4: "April 12/1981",
+    answer: 4,
+  },
+  {
+    question: "Which Greek historian is known as the “Father of History”?",
+    choice1: "Aristoteles",
+    choice2: "Platon",
+    choice3: "Herodotus",
+    choice4: "Pitagoras",
+    answer: 3,
+  },
+  {
+    question: "Who built the first car in America?",
+    choice1: "George Bush",
+    choice2: "Henry Ford",
+    choice3: "Barack Obama",
+    choice4: "Tom Hanks",
     answer: 2,
   },
+  
 ];
 
-const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 4;
+const SCORE_POINTS = 10;
+const MAX_QUESTIONS = questions.length;
 
 startGame = () => {
   questionCounter = 0;
@@ -107,6 +156,7 @@ choices.forEach((choice) => {
 incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
+  console.log(score)
 };
 
 startGame();
