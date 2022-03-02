@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 
 :root {
-  background-color: rgb(29, 26, 26);
+  background-color: #ff7200;
 }
 
 * {
@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: "Nova Square", cursive;
+  font-family: bookman oldsyle;
 }
 
 h1 {
@@ -32,6 +32,7 @@ h2 {
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
+  border-radius: 10px;
 }
 
 .flex-column {
@@ -66,8 +67,8 @@ h2 {
   color: rgb(28, 26, 26);
   background: linear-gradient(
     90deg,
-    rgb(18, 92, 255) 0%,
-    rgb(0, 102, 255) 100%
+    #00ffc3 0%,
+    #00ffc3 100%
   );
   border-radius: 4px;
 }
@@ -88,8 +89,8 @@ h2 {
 #highscore-btn {
   background: linear-gradient(
     90deg,
-    rgb(255, 247, 9) 0%,
-    rgb(240, 221, 6) 100%
+    #FF1493 0%,
+    #FF1493 100%
   );
 }
 
